@@ -1,0 +1,188 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.0"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "MODUS3_CA.ppd"
+*Manufacturer:          "CUSTOM"
+*Product:               "(MODUS3_CA)"
+*1284DeviceID:          "MFG:CUSTOM;CMD:CUSTOM;MDL:MODUS3_CA (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       100
+*cupsFilter:            "application/vnd.cups-raster 0 rasterToMODUS3_CA"
+*ModelName:             "CUSTOM MODUS3CA"
+*ShortNickName:         "MODUS3_CA"
+*NickName:              "MODUS3_CA rel 1.04"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:           True
+*DefaultColorSpace:     RGB
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     true
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Paper Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X80MMY8IN
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+*PageSize X58MMYRollShort/58mm RollShort:     "<</PageSize[149 1542]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X58MMYRoll/58mm Roll:               "<</PageSize[149 3336]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X58MMY8IN/58mm * 8in:             "<</PageSize[149 575]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X58MMY16IN/58mm * 16in:             "<</PageSize[149 1151]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X58MMY22IN/58mm * 22in:           "<</PageSize[149 1585]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X58MMY36IN/58mm * 36in:           "<</PageSize[149 2591]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X58MMY157IN/58mm * 157in:           "<</PageSize[149 11305]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*PageSize X80MMYRollShort/82mm RollShort:     "<</PageSize[204 1542]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMYRoll/80mm Roll:               "<</PageSize[204 3336]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY8IN/80mm * 8in:             "<</PageSize[204 575]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY16IN/80mm * 16in:             "<</PageSize[204 1151]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY22IN/80mm * 22in:           "<</PageSize[204 1585]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY36IN/80mm * 36in:           "<</PageSize[204 2591]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY157IN/80mm * 157in:           "<</PageSize[204 11305]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+
+
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X80MMY8IN
+
+*PageRegion X58MMYRollShort/58mm RollShort:     "<</PageSize[149 1542]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X58MMYRoll/58mm Roll:               "<</PageSize[149 3336]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X58MMY8IN/58mm * 8in:             "<</PageSize[149 575]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X58MMY16IN/58mm * 16in:             "<</PageSize[149 1151]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X58MMY22IN/58mm * 22in:           "<</PageSize[149 1585]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X58MMY36IN/58mm * 36in:           "<</PageSize[149 2591]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X58MMY157IN/58mm * 157in:           "<</PageSize[149 11305]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*PageRegion X80MMYRollShort/80mm RollShort:     "<</PageSize[204 1542]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMYRoll/80mm Roll:               "<</PageSize[204 3336]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY8IN/80mm * 8in:             "<</PageSize[204 575]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY16IN/80mm * 16in:             "<</PageSize[204 1151]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY22IN/80mm * 22in:           "<</PageSize[204 1585]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY36IN/80mm * 36in:           "<</PageSize[204 2591]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY157IN/80mm * 157in:           "<</PageSize[204 11305]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageRegion
+
+
+
+*DefaultImageableArea: X80MMY8IN
+
+*ImageableArea X58MMYRollShort:	"0.0 0.0 149.0 1542.0"
+*ImageableArea X58MMYRoll:	    "0.0 0.0 149.0 3336.0"
+*ImageableArea X58MMY8IN:	    "0.0 0.0 149.0 575.0"
+*ImageableArea X58MMY16IN:	    "0.0 0.0 149.0 1151.0"
+*ImageableArea X58MMY22IN:	    "0.0 0.0 149.0 1585.0"
+*ImageableArea X58MMY36IN:	    "0.0 0.0 149.0 2591.0"
+*ImageableArea X58MMY157IN:	    "0.0 0.0 149.0 11305.0"
+
+*ImageableArea X80MMYRollShort:     "0.0 0.0 204.0 1542.0"
+*ImageableArea X80MMYRoll:          "0.0 0.0 204.0 3336.0"
+*ImageableArea X80MMY8IN:          "0.0 0.0 204.0 575.0"
+*ImageableArea X80MMY16IN:          "0.0 0.0 204.0 1151.0"
+*ImageableArea X80MMY22IN:         "0.0 0.0 204.0 1585.0"
+*ImageableArea X80MMY36IN:         "0.0 0.0 204.0 2591.0"
+*ImageableArea X80MMY157IN:         "0.0 0.0 204.0 11305.0"
+
+
+
+*DefaultPaperDimension: X80MMY8IN
+
+*PaperDimension X58MMYRollShort:		"149 1542"
+*PaperDimension X58MMYRoll:          "149 3336"
+*PaperDimension X58MMY8IN:		    "149 575"
+*PaperDimension X58MMY16IN:		    "149 1151"
+*PaperDimension X58MMY22IN:		    "149 1585"
+*PaperDimension X58MMY36IN:		    "149 2591"
+*PaperDimension X58MMY157IN:		    "149 11305"
+
+*PaperDimension X80MMYRollShort:     "204 1542"
+*PaperDimension X80MMYRoll:          "204 3336"
+*PaperDimension X80MMY8IN:          "204 575"
+*PaperDimension X80MMY16IN:          "204 1151"
+*PaperDimension X80MMY22IN:         "204 1585"
+*PaperDimension X80MMY36IN:         "204 2591"
+*PaperDimension X80MMY157IN:         "204 11305"
+
+*MaxMediaWidth:  "204"
+*MaxMediaHeight: "3336"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 0 204
+*ParamCustomPageSize Height:       2 points 0 3336
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+
+*OpenUI *CutterMode/Cutter Mode: PickOne
+*DefaultCutterMode: 4FullCutEndDoc
+*CutterMode 0NoCut/No cut: ""
+*CutterMode 1FullCutEndPage/Full Cut at Page End: ""
+*CutterMode 2FullCutEndDoc/Full Cut at Document End: ""
+*CloseUI: *CutterMode
+
+
+*OpenGroup: Quality
+
+
+*OpenUI *PrintQuality/Printer Quality: PickOne
+*DefaultPrintQuality: 1Normal
+*PrintQuality 0HighQuality/High Quality: ""
+*PrintQuality 1Normal/Normal: ""
+*PrintQuality 2HighSpeed/High Speed: ""
+*CloseUI: *PrintQuality
+
+*OpenUI *BitsPerPixel/Output Quality: PickOne
+*OrderDependency: 10 AnySetup *BitsPerPixel
+*DefaultBitsPerPixel: 8
+*BitsPerPixel 1/Draft: "<</cupsBitsPerColor 1>>setpagedevice"
+*BitsPerPixel 8/High: "<</cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *BitsPerPixel
+
+
+*OpenUI *PrintDensity/Print Density: PickOne
+*DefaultPrintDensity: 2Density
+*PrintDensity 0Density-25/-25%: ""
+*PrintDensity 1Density-12/-12%: ""
+*PrintDensity 2Density/     0%: ""
+*PrintDensity 3Density+12/+12%: ""
+*PrintDensity 4Density+25/+25%: ""
+*PrintDensity 10DensityNotSetByDriver/Not set by driver: ""
+*CloseUI: *PrintDensity
+
+*CloseGroup: Quality
+
+
+
+*OpenGroup: Presentation
+
+*OpenUI *Presentation/Presentation: PickOne
+*DefaultPresentation: 0HoldInPres
+*Presentation 0HoldInPres/Hold in presentation: ""
+*Presentation 1EjectImmediately/Eject immediately: ""
+*CloseUI: *Presentation
+
+*OpenUI *ContinuousMode/Continuous mode: PickOne
+*DefaultContinuousMode: 0Off
+*ContinuousMode 0Off/Off: ""
+*ContinuousMode 1On/On: ""
+*CloseUI: *ContinuousMode
+
+*CloseGroup: Presentation
+
+
+*% End
