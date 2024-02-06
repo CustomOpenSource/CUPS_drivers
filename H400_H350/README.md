@@ -1,4 +1,4 @@
-# CUSTOM MODUS3_CA CUPS driver
+# CUSTOM H400_H350 CUPS driver
 
 ## Package description
 
@@ -19,25 +19,25 @@ available on your computer
 - Compile the executables
 
         make
-        sudo chmod +x bin/rasterToMODUS3_CA
+        sudo chmod +x bin/rastertoH400_H350
 
 
 - Copy the result 
 
-        sudo cp bin/rasterToMODUS3_CA /usr/lib/cups/filter
+        sudo cp bin/rastertoH400_H350 /usr/lib/cups/filter
 
 
-- Create a CUSTOM folder and copy the ppd file there
+- Create a HP folder and copy the ppd file there
 
-        sudo mkdir /usr/share/cups/model/CUSTOM
+        sudo mkdir /usr/share/cups/model/HP
         cd ppd/
-        gzip -k MODUS3_CA.ppd
-        sudo cp MODUS3_CA.ppd.gz /usr/share/cups/model/CUSTOM
+        gzip H400_H350.ppd
+        sudo cp H400_H350.ppd.gz /usr/share/cups/model/HP
 
 
 - Restart the CUPS server
 
-        sudo cupsd restart
+        sudo service cups restart
 
 
 ### Notes
@@ -56,4 +56,4 @@ You should now be able to install your printer from the web interface
 
 or by executing a command similar to
 
-    sudo lpadmin -p MODUS3 -E -v "usb://CUSTOM%20SPA/MODUS3_CA?serial=MODUS3_CA_PRN_NUM.:_0" -P /usr/share/cups/model/CUSTOM/MODUS3_CA.ppd.gz
+    sudo lpadmin -p HP_H400 -E -v "usb://HP/H400?serial=H400_PRN_NUM.0" -P /usr/share/cups/model/HP/H400_H350.ppd.gz
