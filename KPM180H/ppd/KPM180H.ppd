@@ -1,0 +1,379 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "KPM180H.ppd"
+*Manufacturer:          "CUSTOM"
+*Product:               "(KPM180H 200Dpi)"
+*1284DeviceID:          "MFG:CUSTOM;CMD:CUSTOM;MDL:KPM180H (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       204
+*cupsFilter:            "application/vnd.cups-raster 0 rastertoKPM180H"
+*ModelName:             "KPM180H"
+*ShortNickName:         "KPM180H"
+*NickName:              "KPM180H rel 2.04 (S.Code:01DV0000000148)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "2"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     True
+*TTRasterizer:          Type42
+*cupsBlackDither:		"0.25 0.37"
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Paper Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X82MMY160MM
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+*% width 20 mm (56.7 pp)
+*PageSize X20MMY54MM/20mm * 54mm:              "<</PageSize[51 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X20MMY80MM/20mm * 80mm:              "<</PageSize[51 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X20MMY120MM/20mm * 120mm:            "<</PageSize[51 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X20MMY160MM/20mm * 160mm:            "<</PageSize[51 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X20MMY200MM/20mm * 200mm:            "<</PageSize[51 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X20MMYRoll/20mm Roll:                "<</PageSize[51 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 54 mm (153.1 pp)
+*PageSize X54MMY54MM/54mm * 54mm:              "<</PageSize[147 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY80MM/54mm * 80mm:              "<</PageSize[147 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY120MM/54mm * 120mm:            "<</PageSize[147 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY160MM/54mm * 160mm:            "<</PageSize[147 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY200MM/54mm * 200mm:            "<</PageSize[147 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMYRoll/54mm Roll:                "<</PageSize[147 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 60 mm (170.1 pp)
+*PageSize X60MMY54MM/60mm * 54mm:              "<</PageSize[164 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY80MM/60mm * 80mm:              "<</PageSize[164 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY120MM/60mm * 120mm:            "<</PageSize[164 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY160MM/60mm * 160mm:            "<</PageSize[164 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY200MM/60mm * 200mm:            "<</PageSize[164 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMYRoll/60mm Roll:                "<</PageSize[164 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 82 mm (232.4 pp)
+*PageSize X82MMY54MM/82mm * 54mm:              "<</PageSize[226 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X82MMY80MM/82mm * 80mm:              "<</PageSize[226 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X82MMY120MM/82mm * 120mm:            "<</PageSize[226 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X82MMY160MM/82mm * 160mm:            "<</PageSize[226 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X82MMY200MM/82mm * 200mm:            "<</PageSize[226 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X82MMYRoll/82mm Roll:                "<</PageSize[226 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 20 mm with A4 zoom
+*PageSize ZX20MMY54MM/ZOOM 20mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX20MMY80MM/ZOOM 20mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX20MMY120MM/ZOOM 20mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX20MMY160MM/ZOOM 20mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX20MMY200MM/ZOOM 20mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX20MMYRoll/ZOOM 20mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 54 mm with A4 zoom
+*PageSize ZX54MMY54MM/ZOOM 54mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX54MMY80MM/ZOOM 54mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX54MMY120MM/ZOOM 54mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX54MMY160MM/ZOOM 54mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX54MMY200MM/ZOOM 54mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX54MMYRoll/ZOOM 54mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 60 mm with A4 zoom
+*PageSize ZX60MMY54MM/ZOOM 60mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX60MMY80MM/ZOOM 60mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX60MMY120MM/ZOOM 60mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX60MMY160MM/ZOOM 60mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX60MMY200MM/ZOOM 60mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX60MMYRoll/ZOOM 60mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 82 mm with A4 zoom
+*PageSize ZX82MMY54MM/ZOOM 82mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX82MMY80MM/ZOOM 82mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX82MMY120MM/ZOOM 82mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX82MMY160MM/ZOOM 82mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX82MMY200MM/ZOOM 82mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX82MMYRoll/ZOOM 82mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X82MMY160MM
+
+*% width 20 mm
+*PageRegion X20MMY54MM/20mm * 54mm:              "<</PageSize[51 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X20MMY80MM/20mm * 80mm:              "<</PageSize[51 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X20MMY120MM/20mm * 120mm:            "<</PageSize[51 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X20MMY160MM/20mm * 160mm:            "<</PageSize[51 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X20MMY200MM/20mm * 200mm:            "<</PageSize[51 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X20MMYRoll/20mm Roll:                "<</PageSize[51 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 54 mm
+*PageRegion X54MMY54MM/54mm * 54mm:              "<</PageSize[147 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY80MM/54mm * 80mm:              "<</PageSize[147 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY120MM/54mm * 120mm:            "<</PageSize[147 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY160MM/54mm * 160mm:            "<</PageSize[147 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY200MM/54mm * 200mm:            "<</PageSize[147 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMYRoll/54mm Roll:                "<</PageSize[147 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 60 mm
+*PageRegion X60MMY54MM/60mm * 54mm:              "<</PageSize[164 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY80MM/60mm * 80mm:              "<</PageSize[164 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY120MM/60mm * 120mm:            "<</PageSize[164 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY160MM/60mm * 160mm:            "<</PageSize[164 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY200MM/60mm * 200mm:            "<</PageSize[164 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMYRoll/60mm Roll:                "<</PageSize[164 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 82 mm
+*PageRegion X82MMY54MM/82mm * 54mm:              "<</PageSize[226 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X82MMY80MM/82mm * 80mm:              "<</PageSize[226 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X82MMY120MM/82mm * 120mm:            "<</PageSize[226 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X82MMY160MM/82mm * 160mm:            "<</PageSize[226 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X82MMY200MM/82mm * 200mm:            "<</PageSize[226 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X82MMYRoll/82mm Roll:                "<</PageSize[226 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 20 mm with A4 zoom
+*PageRegion ZX20MMY54MM/ZOOM 20mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX20MMY80MM/ZOOM 20mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX20MMY120MM/ZOOM 20mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX20MMY160MM/ZOOM 20mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX20MMY200MM/ZOOM 20mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX20MMYRoll/ZOOM 20mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 54 mm with A4 zoom
+*PageRegion ZX54MMY54MM/ZOOM 54mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX54MMY80MM/ZOOM 54mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX54MMY120MM/ZOOM 54mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX54MMY160MM/ZOOM 54mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX54MMY200MM/ZOOM 54mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX54MMYRoll/ZOOM 54mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 60 mm with A4 zoom
+*PageRegion ZX60MMY54MM/ZOOM 60mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX60MMY80MM/ZOOM 60mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX60MMY120MM/ZOOM 60mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX60MMY160MM/ZOOM 60mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX60MMY200MM/ZOOM 60mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX60MMYRoll/ZOOM 60mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*% width 82 mm with A4 zoom
+*PageRegion ZX82MMY54MM/ZOOM 82mm * 54mm:              "<</PageSize[215 153]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX82MMY80MM/ZOOM 82mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX82MMY120MM/ZOOM 82mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX82MMY160MM/ZOOM 82mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX82MMY200MM/ZOOM 82mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX82MMYRoll/ZOOM 82mm Roll:                "<</PageSize[215 1680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X82MMY160MM
+
+*% width 20 mm
+*ImageableArea X20MMY54MM:          "0.0 0.0 51.0 153.0"
+*ImageableArea X20MMY80MM:          "0.0 0.0 51.0 226.0"
+*ImageableArea X20MMY120MM:         "0.0 0.0 51.0 340.0"
+*ImageableArea X20MMY160MM:         "0.0 0.0 51.0 453.0"
+*ImageableArea X20MMY200MM:         "0.0 0.0 51.0 566.0"
+*ImageableArea X20MMYRoll:          "0.0 0.0 51.0 1680.0"
+
+*% width 54 mm
+*ImageableArea X54MMY54MM:          "0.0 0.0 147.0 153.0"
+*ImageableArea X54MMY80MM:          "0.0 0.0 147.0 226.0"
+*ImageableArea X54MMY120MM:         "0.0 0.0 147.0 340.0"
+*ImageableArea X54MMY160MM:         "0.0 0.0 147.0 453.0"
+*ImageableArea X54MMY200MM:         "0.0 0.0 147.0 566.0"
+*ImageableArea X54MMYRoll:          "0.0 0.0 147.0 1680.0"
+
+*% width 60 mm
+*ImageableArea X60MMY54MM:          "0.0 0.0 164.0 153.0"
+*ImageableArea X60MMY80MM:          "0.0 0.0 164.0 226.0"
+*ImageableArea X60MMY120MM:         "0.0 0.0 164.0 340.0"
+*ImageableArea X60MMY160MM:         "0.0 0.0 164.0 453.0"
+*ImageableArea X60MMY200MM:         "0.0 0.0 164.0 566.0"
+*ImageableArea X60MMYRoll:          "0.0 0.0 164.0 1680.0"
+
+*% width 82 mm
+*ImageableArea X82MMY54MM:          "0.0 0.0 226.0 153.0"
+*ImageableArea X82MMY80MM:          "0.0 0.0 226.0 226.0"
+*ImageableArea X82MMY120MM:         "0.0 0.0 226.0 340.0"
+*ImageableArea X82MMY160MM:         "0.0 0.0 226.0 453.0"
+*ImageableArea X82MMY200MM:         "0.0 0.0 226.0 566.0"
+*ImageableArea X82MMYRoll:          "0.0 0.0 226.0 1680.0"
+
+*% width 20 mm with A4 zoom
+*ImageableArea ZX20MMY54MM:          "0.0 0.0 215.0 153.0"
+*ImageableArea ZX20MMY80MM:          "0.0 0.0 215.0 226.0"
+*ImageableArea ZX20MMY120MM:         "0.0 0.0 215.0 340.0"
+*ImageableArea ZX20MMY160MM:         "0.0 0.0 215.0 453.0"
+*ImageableArea ZX20MMY200MM:         "0.0 0.0 215.0 566.0"
+*ImageableArea ZX20MMYRoll:          "0.0 0.0 215.0 1680.0"
+
+*% width 54 mm with A4 zoom
+*ImageableArea ZX54MMY54MM:          "0.0 0.0 215.0 153.0"
+*ImageableArea ZX54MMY80MM:          "0.0 0.0 215.0 226.0"
+*ImageableArea ZX54MMY120MM:         "0.0 0.0 215.0 340.0"
+*ImageableArea ZX54MMY160MM:         "0.0 0.0 215.0 453.0"
+*ImageableArea ZX54MMY200MM:         "0.0 0.0 215.0 566.0"
+*ImageableArea ZX54MMYRoll:          "0.0 0.0 215.0 1680.0"
+
+*% width 60 mm with A4 zoom
+*ImageableArea ZX60MMY54MM:          "0.0 0.0 215.0 153.0"
+*ImageableArea ZX60MMY80MM:          "0.0 0.0 215.0 226.0"
+*ImageableArea ZX60MMY120MM:         "0.0 0.0 215.0 340.0"
+*ImageableArea ZX60MMY160MM:         "0.0 0.0 215.0 453.0"
+*ImageableArea ZX60MMY200MM:         "0.0 0.0 215.0 566.0"
+*ImageableArea ZX60MMYRoll:          "0.0 0.0 215.0 1680.0"
+
+*% width 82 mm with A4 zoom
+*ImageableArea ZX82MMY54MM:          "0.0 0.0 215.0 153.0"
+*ImageableArea ZX82MMY80MM:          "0.0 0.0 215.0 226.0"
+*ImageableArea ZX82MMY120MM:         "0.0 0.0 215.0 340.0"
+*ImageableArea ZX82MMY160MM:         "0.0 0.0 215.0 453.0"
+*ImageableArea ZX82MMY200MM:         "0.0 0.0 215.0 566.0"
+*ImageableArea ZX82MMYRoll:          "0.0 0.0 215.0 1680.0"
+
+*DefaultPaperDimension: X82MMY160MM
+
+*% width 20 mm
+*PaperDimension X20MMY54MM:         "51 153"
+*PaperDimension X20MMY80MM:         "51 226"
+*PaperDimension X20MMY120MM:        "51 340"
+*PaperDimension X20MMY160MM:        "51 453"
+*PaperDimension X20MMY200MM:        "51 566"
+*PaperDimension X20MMYRoll:         "51 1680"
+
+*% width 54 mm
+*PaperDimension X54MMY54MM:         "147 153"
+*PaperDimension X54MMY80MM:         "147 226"
+*PaperDimension X54MMY120MM:        "147 340"
+*PaperDimension X54MMY160MM:        "147 453"
+*PaperDimension X54MMY200MM:        "147 566"
+*PaperDimension X54MMYRoll:         "147 1680"
+
+*% width 60 mm
+*PaperDimension X60MMY54MM:         "164 153"
+*PaperDimension X60MMY80MM:         "164 226"
+*PaperDimension X60MMY120MM:        "164 340"
+*PaperDimension X60MMY160MM:        "164 453"
+*PaperDimension X60MMY200MM:        "164 566"
+*PaperDimension X60MMYRoll:         "164 1680"
+
+*% width 82 mm
+*PaperDimension X82MMY54MM:         "226 153"
+*PaperDimension X82MMY80MM:         "226 226"
+*PaperDimension X82MMY120MM:        "226 340"
+*PaperDimension X82MMY160MM:        "226 453"
+*PaperDimension X82MMY200MM:        "226 566"
+*PaperDimension X82MMYRoll:         "226 1680"
+
+*% width 20 mm with A4 zoom
+*PaperDimension ZX20MMY54MM:         "215 153"
+*PaperDimension ZX20MMY80MM:         "215 226"
+*PaperDimension ZX20MMY120MM:        "215 340"
+*PaperDimension ZX20MMY160MM:        "215 453"
+*PaperDimension ZX20MMY200MM:        "215 566"
+*PaperDimension ZX20MMYRoll:         "215 1680"
+
+*% width 54 mm with A4 zoom
+*PaperDimension ZX54MMY54MM:         "215 153"
+*PaperDimension ZX54MMY80MM:         "215 226"
+*PaperDimension ZX54MMY120MM:        "215 340"
+*PaperDimension ZX54MMY160MM:        "215 453"
+*PaperDimension ZX54MMY200MM:        "215 566"
+*PaperDimension ZX54MMYRoll:         "215 1680"
+
+*% width 60 mm with A4 zoom
+*PaperDimension ZX60MMY54MM:         "215 153"
+*PaperDimension ZX60MMY80MM:         "215 226"
+*PaperDimension ZX60MMY120MM:        "215 340"
+*PaperDimension ZX60MMY160MM:        "215 453"
+*PaperDimension ZX60MMY200MM:        "215 566"
+*PaperDimension ZX60MMYRoll:         "215 1680"
+
+*% width 82 mm with A4 zoom
+*PaperDimension ZX82MMY54MM:         "215 153"
+*PaperDimension ZX82MMY80MM:         "215 226"
+*PaperDimension ZX82MMY120MM:        "215 340"
+*PaperDimension ZX82MMY160MM:        "215 453"
+*PaperDimension ZX82MMY200MM:        "215 566"
+*PaperDimension ZX82MMYRoll:         "215 1680"
+
+*MaxMediaWidth:  "226"
+*MaxMediaHeight: "1690"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 215
+*ParamCustomPageSize Height:       2 points 72 1690
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *BitsPerPixel/Output quality: PickOne
+*OrderDependency: 10 AnySetup *BitsPerPixel
+*DefaultBitsPerPixel: 8
+*BitsPerPixel 1/Draft: "<</cupsBitsPerColor 1>>setpagedevice"
+*BitsPerPixel 8/High: "<</cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *BitsPerPixel
+
+*OpenUI *PrintSpeed/Print speed: PickOne
+*DefaultPrintSpeed: 1Normal
+*PrintSpeed 0HighQuality/High Quality: ""
+*PrintSpeed 1Normal/Normal: ""
+*PrintSpeed 2HighSpeed/High Speed: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *Darkness/Darkness: PickOne
+*DefaultDarkness: 4Density0
+*Darkness 0Density-50/-50%: ""
+*Darkness 1Density-37/-37%: ""
+*Darkness 2Density-25/-25%: ""
+*Darkness 3Density-12/-12%: ""
+*Darkness 4Density0/ 0%: ""
+*Darkness 5Density+12/+12%: ""
+*Darkness 6Density+25/+25%: ""
+*Darkness 7Density+37/+37%: ""
+*Darkness 8Density+50/+50%: ""
+*CloseUI: *Darkness
+
+
+*CloseGroup: Quality
+
+
+*OpenGroup: Presentation/Presentation
+
+*OpenUI *NotchAlignment/Notch alignement: PickOne
+*DefaultNotchAlignment: 0NotchAlignmentOff
+*NotchAlignment 0NotchAlignmentOff/Off: ""
+*NotchAlignment 1NotchAlignmentOn/On: ""
+*CloseUI: NotchAlignment
+
+*OpenUI *TearOffDistance/Tear Off Distance: PickOne
+*DefaultTearOffDistance: 2TearOff0mm
+*TearOffDistance 0TearOff-4mm/-4 mm: ""
+*TearOffDistance 1TearOff-2mm/-2 mm: ""
+*TearOffDistance 2TearOff0mm/0 mm: ""
+*TearOffDistance 3TearOff+2mm/2 mm: ""
+*TearOffDistance 4TearOff+4mm/4 mm: ""
+*TearOffDistance 5TearOff+6mm/6 mm: ""
+*TearOffDistance 6TearOff+8mm/8 mm: ""
+*TearOffDistance 7TearOff+10mm/10 mm: ""
+*TearOffDistance 8TearOff+12mm/12 mm: ""
+*TearOffDistance 9TearOff+14mm/14 mm: ""
+*TearOffDistance 10TearOff+16mm/16 mm: ""
+*TearOffDistance 11TearOff+18mm/18 mm: ""
+*TearOffDistance 12TearOff+20mm/20 mm: ""
+*CloseUI: TearOffDistance
+
+
+*CloseGroup: Presentation
+
+
+*% End

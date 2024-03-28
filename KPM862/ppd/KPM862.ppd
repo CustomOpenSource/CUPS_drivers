@@ -1,0 +1,189 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "KPM862.ppd"
+*Manufacturer:          "CUSTOM"
+*Product:               "(KPM862)"
+*1284DeviceID:          "MFG:CUSTOM;CMD:CUSTOM;MDL:KPM862 (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       203
+*cupsFilter:            "application/vnd.cups-raster 0 rastertoKPM862"
+*ModelName:             "KPM862"
+*ShortNickName:         "KPM862"
+*NickName:              "KPM862 rel 2.03 (S.Code:01DV0000000231)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "2"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     FALSE
+*TTRasterizer:          Type42
+*cupsBlackDither:	    "0.25 0.37"
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Page size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X80MMYROLL
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+*PageSize X40MMY120MM/40x120mm:            "<</PageSize[102 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY120MM/54x120mm:            "<</PageSize[137 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY120MM/60x120mm:            "<</PageSize[169 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY120MM/80x120mm:            "<</PageSize[215 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X86MMY120MM/86x120mm:            "<</PageSize[243 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY86MM/54x86mm ISO:          "<</PageSize[137 242]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X86MMY54MM/86x54mm ISO:          "<</PageSize[219 152]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize ATBWITHSTUB/ATB with Stub:       "<</PageSize[204 563]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize ATBNOSTUB/ATB no Stub:           "<</PageSize[204 563]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize BAGTAG16I/Bagtag 16 Inches:      "<</PageSize[204 1137]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize BAGTAG19I/Bagtag 19 Inches:      "<</PageSize[204 1348]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize BAGTAG20.2I/Bagtag 20.2 Inches:  "<</PageSize[204 1433]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize BAGTAG21I/Bagtag 21 Inches:      "<</PageSize[204 1492]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X40MMYROLL/40mm Roll:            "<</PageSize[102 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMYROLL/54mm Roll:            "<</PageSize[137 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMYROLL/60mm Roll:            "<</PageSize[169 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMYROLL/80mm Roll:            "<</PageSize[215 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X80MMYROLL
+
+*PageRegion X40MMY120MM/40x120mm:            "<</PageSize[102 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY120MM/54x120mm:            "<</PageSize[137 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY120MM/60x120mm:            "<</PageSize[169 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY120MM/80x120mm:            "<</PageSize[215 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X86MMY120MM/86x120mm:            "<</PageSize[243 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY86MM/54x86mm ISO:          "<</PageSize[137 242]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X86MMY54MM/86x54mm ISO:          "<</PageSize[219 152]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion ATBWITHSTUB/ATB with Stub:       "<</PageSize[204 563]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion ATBNOSTUB/ATB no Stub:           "<</PageSize[204 563]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion BAGTAG16I/Bagtag 16 Inches:      "<</PageSize[204 1137]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion BAGTAG19I/Bagtag 19 Inches:      "<</PageSize[204 1348]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion BAGTAG20.2I/Bagtag 20.2 Inches:  "<</PageSize[204 1433]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion BAGTAG21I/Bagtag 21 Inches:      "<</PageSize[204 1492]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X40MMYROLL/40mm Roll:            "<</PageSize[102 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMYROLL/54mm Roll:            "<</PageSize[137 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMYROLL/60mm Roll:            "<</PageSize[169 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMYROLL/80mm Roll:            "<</PageSize[215 2920]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X80MMYROLL
+
+*ImageableArea X40MMY120MM:         "0.0 0.0 102.0 340.0"
+*ImageableArea X54MMY120MM:         "0.0 0.0 137.0 340.0"
+*ImageableArea X60MMY120MM:         "0.0 0.0 169.0 340.0"
+*ImageableArea X80MMY120MM:         "0.0 0.0 215.0 340.0"
+*ImageableArea X86MMY120MM:         "0.0 0.0 243.0 340.0"
+*ImageableArea X54MMY86MM:          "0.0 0.0 137.0 242.0"
+*ImageableArea X86MMY54MM:          "0.0 0.0 219.0 152.0"
+*ImageableArea ATBWITHSTUB:         "0.0 45.0 204.0 563.0"
+*ImageableArea ATBNOSTUB:           "0.0 0.0 204.0 563.0"
+*ImageableArea BAGTAG16I:           "0.0 0.0 204.0 1137.0"
+*ImageableArea BAGTAG19I:           "0.0 0.0 204.0 1348.0"
+*ImageableArea BAGTAG20.2I:         "0.0 0.0 204.0 1433.0"
+*ImageableArea BAGTAG21I:           "0.0 0.0 204.0 1492.0"
+*ImageableArea X40MMYROLL:          "0.0 0.0 102.0 2920.0"
+*ImageableArea X54MMYROLL:          "0.0 0.0 137.0 2920.0"
+*ImageableArea X60MMYROLL:          "0.0 0.0 169.0 2920.0"
+*ImageableArea X80MMYROLL:          "0.0 0.0 215.0 2920.0"
+
+*DefaultPaperDimension: X80MMYROLL
+
+*PaperDimension X40MMY120MM:       "102 340"
+*PaperDimension X54MMY120MM:       "137 340"
+*PaperDimension X60MMY120MM:       "169 340"
+*PaperDimension X80MMY120MM:       "215 340"
+*PaperDimension X86MMY120MM:       "243 340"
+*PaperDimension X54MMY86MM:        "137 242"
+*PaperDimension X86MMY54MM:        "219 152"
+*PaperDimension ATBWITHSTUB:       "204 563"
+*PaperDimension ATBNOSTUB:         "204 563"
+*PaperDimension BAGTAG16I:         "204 1137"
+*PaperDimension BAGTAG19I:         "204 1348"
+*PaperDimension BAGTAG20.2I:       "204 1433"
+*PaperDimension BAGTAG21I:         "204 1492"
+*PaperDimension X40MMYROLL:        "102 396"
+*PaperDimension X54MMYROLL:        "137 510"
+*PaperDimension X60MMYROLL:        "169 680"
+*PaperDimension X80MMYROLL:        "215 2920"
+
+*MaxMediaWidth:  "225"
+*MaxMediaHeight: "2930"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 225
+*ParamCustomPageSize Height:       2 points 72 2930
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+*OpenUI *CutterMode/Cuter mode: PickOne
+*DefaultCutterMode: 1TotalCutPage
+*CutterMode 0NoCut/Don't cut: ""
+*CutterMode 1TotalCutPage/Cut after every page: ""
+*CutterMode 2TotalCutDoc/Cut at the end of the document: ""
+*CloseUI: *CutterMode
+
+*OpenUI *PrintRotation/Print Rotation: PickOne
+*DefaultPrintRotation: 0Disable
+*PrintRotation 0Disable/Not set by driver: ""
+*PrintRotation 1Normal/Normal: ""
+*PrintRotation 2Rotation180/180 Degrees: ""
+*CloseUI: PrintRotation
+
+
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *BitsPerPixel/Image Quality: PickOne
+*OrderDependency: 10 AnySetup *BitsPerPixel
+*DefaultBitsPerPixel: 8
+*BitsPerPixel 1/Draft: "<</cupsBitsPerColor 1>>setpagedevice"
+*BitsPerPixel 8/High: "<</cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *BitsPerPixel
+
+*OpenUI *PrintSpeed/Print Speed: PickOne
+*DefaultPrintSpeed: 1Normal
+*PrintSpeed 0HighQuality/High Quality: ""
+*PrintSpeed 1Normal/Normal: ""
+*PrintSpeed 2HighSpeed/High Speed: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *Darkness/Darkness: PickOne
+*DefaultDarkness: 2Darkness0
+*Darkness 0Darkness-25/-25%: ""
+*Darkness 1Darkness-12/-12%: ""
+*Darkness 2Darkness0/ 0%: ""
+*Darkness 3Darkness+12/+12%: ""
+*Darkness 4Darkness+25/+25%: ""
+*Darkness 5NotSetByDriver/Not set by driver: ""
+*CloseUI: *Darkness
+
+*CloseGroup: Quality
+
+
+*OpenGroup: Presentation/Presentation
+
+*OpenUI *NotchAlignment/Notch Alignement: PickOne
+*DefaultNotchAlignment: 0Disable
+*NotchAlignment 0Disable/Disable: ""
+*NotchAlignment 1AtEndPage/After every page: ""
+*NotchAlignment 2AtBeginAndEndPage/Before and after every page: ""
+*CloseUI: NotchAlignment
+
+*CloseGroup: Presentation
+
+
+*% End

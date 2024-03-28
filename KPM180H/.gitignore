@@ -1,0 +1,6 @@
+*PKG/**
+*.tgz
+bin
+*Drv*
+generated*/**
+*.ppd.gz

@@ -1,0 +1,136 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "TG2480-H.ppd"
+*Manufacturer:          "CUSTOM"
+*Product:               "(TG2480-H)"
+*1284DeviceID:          "MFG:CUSTOM;CMD:CUSTOM;MDL:TG2480-H (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       202
+*cupsFilter:            "application/vnd.cups-raster 0 rastertoTG2480H"
+*ModelName:             "TG2480-H"
+*ShortNickName:         "TG2480-H"
+*NickName:              "TG2480-H rel 2.02 (S.Code:01DV00048)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "2"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     FALSE
+*TTRasterizer:          Type42
+*cupsBlackDither:	"0.25 0.37"
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X80MMY140MM
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+
+*PageSize X80MMY140MM/140mm:            "<</PageSize[220 396]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY180MM/180mm:            "<</PageSize[220 510]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY240MM/240mm:              "<</PageSize[220 680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMYRoll/Roll:              "<</PageSize[220 2920]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X80MMY140MM
+
+*PageRegion X80MMY140MM/140mm:            "<</PageSize[220 396]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY180MM/180mm:            "<</PageSize[220 510]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY240MM/240mm:              "<</PageSize[220 680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMYRoll/Roll:              "<</PageSize[220 2920]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X80MMY140MM
+
+*ImageableArea X80MMY140MM:         "0.0 0.0 220.0 396.0"
+*ImageableArea X80MMY180MM:         "0.0 0.0 220.0 510.0"
+*ImageableArea X80MMY240MM:         "0.0 0.0 220.0 680.0"
+*ImageableArea X80MMYRoll:         "0.0 0.0 220.0 2920.0"
+
+*DefaultPaperDimension: X80MMY140MM
+
+*PaperDimension X80MMY140MM:        "220 396"
+*PaperDimension X80MMY180MM:        "220 510"
+*PaperDimension X80MMY240MM:        "220 680"
+*PaperDimension X80MMYRoll:         "220 2920"
+
+*MaxMediaWidth:  "220"
+*MaxMediaHeight: "2930"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 220
+*ParamCustomPageSize Height:       2 points 72 2930
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+
+*OpenUI *CutterMode/Cutter Mode: PickOne
+*DefaultCutterMode: 1CutPageRecovery
+*CutterMode 0NoCutPage/Don't cut: ""
+*CutterMode 1CutPageRecovery/Total cut after every page, then recover: ""
+*CutterMode 2CutPageNoRecovery/Total cut after every page, don't recover: ""
+*CutterMode 3CutDocRecovery/Total cut at the end, then recover: ""
+*CutterMode 4CutDocNoRecovery/Total cut at the end, don't recover: ""
+*CloseUI: *CutterMode
+
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *BitsPerPixel/Image Quality: PickOne
+*OrderDependency: 10 AnySetup *BitsPerPixel
+*DefaultBitsPerPixel: 8
+*BitsPerPixel 1/Draft: "<</cupsBitsPerColor 1>>setpagedevice"
+*BitsPerPixel 8/High: "<</cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *BitsPerPixel
+
+*OpenUI *PrintSpeed/Print Speed: PickOne
+*DefaultPrintSpeed: 0Normal
+*PrintSpeed 0Normal/Normal: ""
+*PrintSpeed 1HighSpeed/High Speed: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *Darkness/Darkness: PickOne
+*DefaultDarkness: 4Density0
+*Darkness 0Density-50/-50%: ""
+*Darkness 1Density-37/-37%: ""
+*Darkness 2Density-25/-25%: ""
+*Darkness 3Density-12/-12%: ""
+*Darkness 4Density0/ 0%: ""
+*Darkness 5Density+12/+12%: ""
+*Darkness 6Density+25/+25%: ""
+*Darkness 7Density+37/+37%: ""
+*Darkness 8Density+50/+50%: ""
+*CloseUI: *Darkness
+
+*CloseGroup: Quality
+
+
+
+*OpenGroup: Presentation/Presentation
+
+*OpenUI *NotchAlignment/Notch Alignment: PickOne
+*DefaultNotchAlignment: 0Off
+*NotchAlignment 0Off/Off: ""
+*NotchAlignment 1On/After every page: ""
+*CloseUI: *NotchAlignment
+
+*CloseGroup: Presentation
+
+
+
+*% End

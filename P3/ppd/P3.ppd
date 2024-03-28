@@ -1,0 +1,153 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "P3.ppd"
+*Manufacturer:          "CUSTOM"
+*Product:               "(P3)"
+*1284DeviceID:          "MFG:CUSTOM;CMD:CUSTOM;MDL:P3 (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       202
+*cupsFilter:            "application/vnd.cups-raster 0 rastertoP3"
+*ModelName:             "P3"
+*ShortNickName:         "P3"
+*NickName:              "P3 rel 2.02 (S.Code:01DV0000000262)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     False
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X80MMY120MM
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+*PageSize X52MMY100MM/52mm * 100mm:            "<</Pagesize[143 283]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X52MMY120MM/52mm * 120mm:            "<</PageSize[143 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X52MMY180MM/52mm * 180mm:            "<</PageSize[143 509]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X52MMY240MM/52mm * 240mm:            "<</PageSize[143 680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X52MMYRoll/52mm Roll:                "<</PageSize[143 2896]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X52MMYRollShort/52mm RollShort:      "<</PageSize[143 1442]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*PageSize X80MMY100MM/80mm * 100mm:            "<</Pagesize[220 283]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY120MM/80mm * 120mm:            "<</PageSize[220 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY180MM/80mm * 180mm:            "<</PageSize[220 509]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY240MM/80mm * 240mm:            "<</PageSize[220 680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMYRoll/80mm Roll:                "<</PageSize[220 2896]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMYRollShort/80mm RollShort:      "<</PageSize[220 1442]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X80MMY120MM
+
+*PageRegion X52MMY100MM/52mm * 100mm:            "<</PageSize[143 283]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X52MMY120MM/52mm * 120mm:            "<</PageSize[143 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X52MMY180MM/52mm * 180mm:            "<</PageSize[143 509]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X52MMY240MM/52mm * 240mm:            "<</PageSize[143 680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X52MMYRoll/52mm Roll:                "<</PageSize[143 2896]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X52MMYRollShort/52mm RollShort:      "<</PageSize[143 1442]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY100MM/80mm * 100mm:            "<</PageSize[220 283]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY120MM/80mm * 120mm:            "<</PageSize[220 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY180MM/80mm * 180mm:            "<</PageSize[220 509]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY240MM/80mm * 240mm:            "<</PageSize[220 680]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMYRoll/80mm Roll:                "<</PageSize[220 2896]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMYRollShort/80mm RollShort:      "<</PageSize[220 1442]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X80MMY120MM
+
+*ImageableArea X52MMY100MM:         "0.0 0.0 143.0 283.0"
+*ImageableArea X52MMY120MM:         "0.0 0.0 143.0 340.0"
+*ImageableArea X52MMY180MM:         "0.0 0.0 143.0 509.0"
+*ImageableArea X52MMY240MM:         "0.0 0.0 143.0 680.0"
+*ImageableArea X52MMYRoll:          "0.0 0.0 143.0 2896.0"
+*ImageableArea X52MMYRollShort:     "0.0 0.0 143.0 1442.0"
+*ImageableArea X80MMY100MM:         "0.0 0.0 220.0 283.0"
+*ImageableArea X80MMY120MM:         "0.0 0.0 220.0 340.0"
+*ImageableArea X80MMY180MM:         "0.0 0.0 220.0 509.0"
+*ImageableArea X80MMY240MM:         "0.0 0.0 220.0 680.0"
+*ImageableArea X80MMYRoll:          "0.0 0.0 220.0 2896.0"
+*ImageableArea X80MMYRollShort:     "0.0 0.0 220.0 1442.0"
+
+*DefaultPaperDimension: X80MMY120MM
+
+*PaperDimension X52MMY100MM:        "143 283"
+*PaperDimension X52MMY120MM:        "143 340"
+*PaperDimension X52MMY180MM:        "143 509"
+*PaperDimension X52MMY240MM:        "143 680"
+*PaperDimension X52MMYRoll:         "143 2896"
+*PaperDimension X52MMYRollShort:    "138 1442"
+*PaperDimension X80MMY100MM:        "220 283"
+*PaperDimension X80MMY120MM:        "220 340"
+*PaperDimension X80MMY180MM:        "220 509"
+*PaperDimension X80MMY240MM:        "220 680"
+*PaperDimension X80MMYRoll:         "220 2896"
+*PaperDimension X80MMYRollShort:    "220 1442"
+*MaxMediaWidth:  "220"
+*MaxMediaHeight: "2896"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 220
+*ParamCustomPageSize Height:       2 points 72 2896
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+
+*OpenUI *CutterMode/Cutter Mode: PickOne
+*DefaultCutterMode: 1PartialCuttEndPage
+*CutterMode 0NoCutPage/No Cut: ""
+*CutterMode 1PartialCuttEndPage/Partial cut after each page: ""
+*CutterMode 2PartialCutEndJob/Partial cut at the end: ""
+*CloseUI: *CutterMode
+
+
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *BitsPerPixel/Image Quality: PickOne
+*OrderDependency: 10 AnySetup *BitsPerPixel
+*DefaultBitsPerPixel: 8
+*BitsPerPixel 1/Draft: "<</cupsBitsPerColor 1>>setpagedevice"
+*BitsPerPixel 8/High: "<</cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *BitsPerPixel
+
+*OpenUI *PrintSpeed/Print Speed: PickOne
+*DefaultPrintSpeed: 1Normal
+*PrintSpeed 0HighQuality/High Quality: ""
+*PrintSpeed 1Normal/Normal: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *Darkness/Darkness: PickOne
+*DefaultDarkness: 2Density0
+*Darkness 0Density-25/-25%: ""
+*Darkness 1Density-12/-12%: ""
+*Darkness 2Density0/Standard: ""
+*Darkness 3Density+12/+12%: ""
+*Darkness 4Density+25/+25%: ""
+*CloseUI: *Darkness
+
+*OpenUI *CashDrawer/Cash Drawer: PickOne
+*DefaultCashDrawer: 0Disable
+*CashDrawer 0Disable/Disable: ""
+*CashDrawer 1EnableBegDoc/Open at the beginning: ""
+*CashDrawer 2EnableEndPage/Open before each page: ""
+*CashDrawer 3EnableEndDoc/Opem at the end: ""
+*CloseUI: CashDrawer
+
+*CloseGroup: P3OTIONS
+
+*% End
