@@ -44,7 +44,7 @@ available on your computer
 
 ### Notes
 
-Compilation is straightforward and should remain idential on all system.
+Compilation is straightforward and should remain identical on all system.
 
 Installation, on the other hand, may vary. Some system place the filter executable and ppd file in different directories, so you may need to check your specific system before copying the files. One way to do that is to check the CUPS' conf file
 

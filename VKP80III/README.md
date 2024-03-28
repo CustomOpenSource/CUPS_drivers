@@ -21,8 +21,8 @@ This drivers depends on libPtPLm library, which is thus required when compiling.
 
 - Copy the output of PtPLm library compilation in a new folder called lib
 
-	mkdir lib
-	cp -r ../PtPLm/out/* ./lib
+        mkdir lib
+        cp -r ../PtPLm/out/* ./lib
 
 - Compile the executables
 
@@ -45,7 +45,7 @@ This drivers depends on libPtPLm library, which is thus required when compiling.
 
 - Copy libPtPLm library to default library location
 
-	sudo cp lib/libPtPLm.so /usr/lib/
+        sudo cp lib/libPtPLm.so /usr/lib/
 
 
 - Restart the CUPS server
@@ -55,7 +55,7 @@ This drivers depends on libPtPLm library, which is thus required when compiling.
 
 ### Notes
 
-Compilation is straightforward and should remain idential on all system.
+Compilation is straightforward and should remain identical on all system.
 
 Installation, on the other hand, may vary. Some system place the filter executable and ppd file in different directories, so you may need to check your specific system before copying the files. One way to do that is to check the CUPS' conf file
 
