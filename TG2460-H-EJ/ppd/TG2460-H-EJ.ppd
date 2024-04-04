@@ -1,0 +1,147 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "TG2460-H-EJ.ppd"
+*Manufacturer:          "CUSTOM"
+*Product:               "(TG2460-H-EJ)"
+*1284DeviceID:          "MFG:CUSTOM;CMD:CUSTOM;MDL:TG2460-H-EJ (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       200
+*cupsFilter:            "application/vnd.cups-raster 0 rastertoTG2460-H-EJ"
+*ModelName:             "TG2460-H-EJ"
+*ShortNickName:         "TG2460-H-EJ"
+*NickName:              "TG2460-H-EJ rel 2.00 (S.Code:01DV0000000335)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "2"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     FALSE
+*TTRasterizer:          Type42
+*cupsBlackDither:	    "0.25 0.37"
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Page size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X60MMY120MM
+
+
+*PageSize X60MMY100MM/100mm:            "<</PageSize[159 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY120MM/120mm:            "<</PageSize[159 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY180MM/180mm:            "<</PageSize[159 510]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY240MM/240mm:            "<</PageSize[159 680]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMYRoll/Roll:              "<</PageSize[159 2930]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X60MMY120MM
+
+*PageRegion X60MMY100MM/100mm:            "<</PageSize[159 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY120MM/120mm:            "<</PageSize[159 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY180MM/180mm:            "<</PageSize[159 510]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY240MM/240mm:            "<</PageSize[159 680]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMYRoll/Roll:              "<</PageSize[159 2930]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X60MMY120MM
+
+*ImageableArea X60MMY100MM:         "0.0 0.0 159.0 283.0"
+*ImageableArea X60MMY120MM:         "0.0 0.0 159.0 340.0"
+*ImageableArea X60MMY180MM:         "0.0 0.0 159.0 510.0"
+*ImageableArea X60MMY240MM:         "0.0 0.0 159.0 680.0"
+*ImageableArea X60MMYRoll:          "0.0 0.0 159.0 2930.0"
+
+*DefaultPaperDimension: X60MMY120MM
+
+*PaperDimension X60MMY100MM:        "159 283"
+*PaperDimension X60MMY120MM:        "159 340"
+*PaperDimension X60MMY180MM:        "159 510"
+*PaperDimension X60MMY240MM:        "159 680"
+*PaperDimension X60MMYRoll:         "159 2930"
+
+
+*MaxMediaWidth:  "159"
+*MaxMediaHeight: "2940"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 159
+*ParamCustomPageSize Height:       2 points 72 2940
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+*OpenUI *CutterMode/Cutter Mode: PickOne
+*DefaultCutterMode: 2CutPageRecovery
+*CutterMode 0TearOff/Tear off: ""
+*CutterMode 1NoCutPage/Don't cut: ""
+*CutterMode 2CutPageRecovery/Total cut after every page, then recovery: ""
+*CutterMode 3CutPageNoRecovery/Total cut after every page, don't recovery: ""
+*CutterMode 4CutDocRecovery/Total cut at the end, then recovery: ""
+*CutterMode 5CutDocNoRecovery/Total cut at the end, don't recovery: ""
+*CloseUI: *CutterMode
+
+
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *BitsPerPixel/Image Quality: PickOne
+*OrderDependency: 10 AnySetup *BitsPerPixel
+*DefaultBitsPerPixel: 8
+*BitsPerPixel 1/Draft: "<</cupsBitsPerColor 1>>setpagedevice"
+*BitsPerPixel 8/High: "<</cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *BitsPerPixel
+
+*OpenUI *PrintSpeed/Print Speed: PickOne
+*DefaultPrintSpeed: 0Standard
+*PrintSpeed 0Standard/Standard: ""
+*PrintSpeed 1HighSpeed/High Speed: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *Darkness/Darkness: PickOne
+*DefaultDarkness: 4Density0
+*Darkness 0Density-50/-50%: ""
+*Darkness 1Density-37/-37%: ""
+*Darkness 2Density-25/-25%: ""
+*Darkness 3Density-12/-12%: ""
+*Darkness 4Density0/Standard: ""
+*Darkness 5Density+12/+12%: ""
+*Darkness 6Density+25/+25%: ""
+*Darkness 7Density+37/+37%: ""
+*Darkness 8Density+50/+50%: ""
+*CloseUI: *Darkness
+
+*CloseGroup: Quality
+
+*OpenGroup: Presentation/Presentation
+
+*OpenUI *NotchAlignment/Notch Alignment: PickOne
+*DefaultNotchAlignment: 0Off
+*NotchAlignment 0Off/Off: ""
+*NotchAlignment 1EndPage/After every page: ""
+*CloseUI: *NotchAlignment
+
+
+*OpenUI *EjectorBehavior/Ejector behavior: PickOne
+*DefaultEjectorBehavior: 1EB0
+*EjectorBehavior 0EB00/Hold indefinitely: ""
+*EjectorBehavior 1EB0/Eject immediately: ""
+*EjectorBehavior 2EB5/Eject after 5s: ""
+*EjectorBehavior 3EB10/Eject after 10s: ""
+*EjectorBehavior 4EB20/Eject after 20s: ""
+*EjectorBehavior 5EB30/Eject after 30s: ""
+*EjectorBehavior 6EB60/Eject after 60s: ""
+*EjectorBehavior 7EB120/Eject after 120s: ""
+*CloseUI: *EjectorBehavior
+
+*CloseGroup: Presentation
+
+
+*% End

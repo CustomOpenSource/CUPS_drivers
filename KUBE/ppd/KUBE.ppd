@@ -1,0 +1,200 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "KUBE.ppd"
+*Manufacturer:          "CUSTOM"
+*Product:               "(KUBE)"
+*1284DeviceID:          "MFG:CUSTOM;CMD:CUSTOM;MDL:KUBE (STR_T-U001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       202
+*cupsFilter:            "application/vnd.cups-raster 0 rastertoKUBE"
+*ModelName:             "KUBE"
+*ShortNickName:         "KUBE"
+*NickName:              "KUBE rel 2.02 (S.Code:01DV00072)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     False
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+
+*OpenUI *PageSize/Page size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X80MMY160MM
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+
+*PageSize X80MMY80MM/80mm * 80mm:              "<</PageSize[219 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY120MM/80mm * 120mm:            "<</PageSize[219 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY160MM/80mm * 160mm:            "<</PageSize[219 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMY200MM/80mm * 200mm:            "<</PageSize[219 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize X80MMYRoll/80mm Roll:                "<</PageSize[219 3260]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX80MMY80MM/ZOOM 80mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX80MMY120MM/ZOOM 80mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX80MMY160MM/ZOOM 80mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX80MMY200MM/ZOOM 80mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageSize ZX80MMYRoll/ZOOM 80mm Roll:                "<</PageSize[215 3260]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X80MMY160MM
+
+*PageRegion X80MMY80MM/80mm * 80mm:              "<</PageSize[219 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY120MM/80mm * 120mm:            "<</PageSize[219 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY160MM/80mm * 160mm:            "<</PageSize[219 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMY200MM/80mm * 200mm:            "<</PageSize[219 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion X80MMYRoll/80mm Roll:                "<</PageSize[219 3260]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+
+*PageRegion ZX80MMY80MM/ZOOM 80mm * 80mm:              "<</PageSize[215 226]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX80MMY120MM/ZOOM 80mm * 120mm:            "<</PageSize[215 340]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX80MMY160MM/ZOOM 80mm * 160mm:            "<</PageSize[215 453]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX80MMY200MM/ZOOM 80mm * 200mm:            "<</PageSize[215 566]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*PageRegion ZX80MMYRoll/ZOOM 80mm Roll:                "<</PageSize[215 3260]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X80MMY160MM
+
+*ImageableArea X80MMY80MM:          "0.0 0.0 219.0 226.0"
+*ImageableArea X80MMY120MM:         "0.0 0.0 219.0 340.0"
+*ImageableArea X80MMY160MM:         "0.0 0.0 219.0 453.0"
+*ImageableArea X80MMY200MM:         "0.0 0.0 219.0 566.0"
+*ImageableArea X80MMYRoll:          "0.0 0.0 219.0 3260.0"
+
+*ImageableArea ZX80MMY80MM:          "0.0 0.0 215.0 195.0"
+*ImageableArea ZX80MMY120MM:         "0.0 0.0 215.0 315.0"
+*ImageableArea ZX80MMY160MM:         "0.0 0.0 215.0 453.0"
+*ImageableArea ZX80MMY200MM:         "0.0 0.0 215.0 566.0"
+*ImageableArea ZX80MMYRoll:          "0.0 0.0 215.0 3260.0"
+
+*DefaultPaperDimension: X80MMY160MM
+
+
+
+*PaperDimension X80MMY80MM:         "219 226"
+*PaperDimension X80MMY120MM:        "219 340"
+*PaperDimension X80MMY160MM:        "219 453"
+*PaperDimension X80MMY200MM:        "219 566"
+*PaperDimension X80MMYRoll:         "219 3260"
+
+*PaperDimension ZX80MMY80MM:         "215 226"
+*PaperDimension ZX80MMY120MM:        "215 340"
+*PaperDimension ZX80MMY160MM:        "215 453"
+*PaperDimension ZX80MMY200MM:        "215 566"
+*PaperDimension ZX80MMYRoll:         "215 3260"
+
+
+*MaxMediaWidth:  "219"
+*MaxMediaHeight: "3270"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[199 199]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 219
+*ParamCustomPageSize Height:       2 points 72 3270
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+
+*OpenUI *CutterMode/Cutter mode: PickOne
+*DefaultCutterMode: 2TotalCutPage
+*CutterMode 0NoCutPage/No Cut: ""
+*CutterMode 1PartialCutPage/Partial cut after every page: ""
+*CutterMode 2TotalCutPage/Total cut after every page: ""
+*CutterMode 3PartialCutDoc/Partial cut at the end of the document: ""
+*CutterMode 4TotalCutDoc/Total cut at the end of the document: ""
+*CloseUI: *CutterMode
+
+
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *PrintSpeed/Print speed: PickOne
+*DefaultPrintSpeed: 1Normal
+*PrintSpeed 0HighQuality/High Quality: ""
+*PrintSpeed 1Normal/Normal: ""
+*PrintSpeed 2HighSpeed/High Speed: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *BitsPerPixel/Image Quality: PickOne
+*OrderDependency: 10 AnySetup *BitsPerPixel
+*DefaultBitsPerPixel: 8
+*BitsPerPixel 1/Draft: "<</cupsBitsPerColor 1>>setpagedevice"
+*BitsPerPixel 8/High: "<</cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *BitsPerPixel
+
+*OpenUI *Darkness/Darkness: PickOne
+*DefaultDarkness: 4Density0
+*Darkness 0Density-50/-50%: ""
+*Darkness 1Density-37/-37%: ""
+*Darkness 2Density-25/-25%: ""
+*Darkness 3Density-12/-12%: ""
+*Darkness 4Density0/ 0%: ""
+*Darkness 5Density+12/+12%: ""
+*Darkness 6Density+25/+25%: ""
+*Darkness 7Density+37/+37%: ""
+*Darkness 8Density+50/+50%: ""
+*CloseUI: *Darkness
+
+*CloseGroup: Quality
+
+
+
+*OpenGroup: Presentation/Presentation
+*OpenUI *NotchAlignment/Notch alignement: PickOne
+*DefaultNotchAlignment: 0Disable
+*NotchAlignment 0Disable/Disable: ""
+*NotchAlignment 1AtBeginPage/Before every page: ""
+*NotchAlignment 2AtEndPage/After every page: ""
+*CloseUI: NotchAlignment
+
+*OpenUI *LogoBeginDoc/Logo Begin Document: PickOne
+*DefaultLogoBeginDoc: 0None
+*LogoBeginDoc 0None/None: ""
+*LogoBeginDoc 1Logo1/Logo 1: ""
+*LogoBeginDoc 2Logo2/Logo 2: ""
+*LogoBeginDoc 3Logo3/Logo 3: ""
+*LogoBeginDoc 4Logo4/Logo 4: ""
+*LogoBeginDoc 5Logo5/Logo 5: ""
+*LogoBeginDoc 6Logo6/Logo 6: ""
+*LogoBeginDoc 7Logo7/Logo 7: ""
+*LogoBeginDoc 8Logo8/Logo 8: ""
+*CloseUI: LogoBeginDoc
+
+*CloseGroup: Presentation
+
+
+
+*OpenGroup: Peripherals/Peripherals
+
+*OpenUI *CashDrawer/Cash Drawer: PickOne
+*DefaultCashDrawer: 0Disable
+*CashDrawer 0Disable/Disable: ""
+*CashDrawer 1EnableBegDoc/Open at the beginning of the document: ""
+*CashDrawer 2EnableEndPage/Open after every page: ""
+*CashDrawer 3EnableEndDoc/Open at the end of the document: ""
+*CloseUI: CashDrawer
+
+*OpenUI *Beep/Beep: PickOne
+*DefaultBeep: 0Disable
+*Beep 0Disable/Disable: ""
+*Beep 1Enable/Enable: ""
+*CloseUI: Beep
+
+*CloseGroup: Peripherals
+
+
+
+
+*% End
