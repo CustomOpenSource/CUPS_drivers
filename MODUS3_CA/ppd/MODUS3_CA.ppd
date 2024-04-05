@@ -129,7 +129,7 @@
 
 
 *OpenUI *CutterMode/Cutter Mode: PickOne
-*DefaultCutterMode: 4FullCutEndDoc
+*DefaultCutterMode: 2FullCutEndDoc
 *CutterMode 0NoCut/No cut: ""
 *CutterMode 1FullCutEndPage/Full Cut at Page End: ""
 *CutterMode 2FullCutEndDoc/Full Cut at Document End: ""
