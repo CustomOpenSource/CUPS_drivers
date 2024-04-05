@@ -490,7 +490,7 @@ int main(int argc, char *argv[]) {
         SendCommand(endPage);
 
         // SEND CUT COMMAND
-	    if (settings.pageCutType == 1 || settings.pageCutType == 2){
+	    if (settings.pageCutType == 1){
 		    SendCommand(LineFeed);
 		    SendCommand(CutCommand[settings.pageCutType]);
 		}
@@ -508,7 +508,7 @@ int main(int argc, char *argv[]) {
 
 	
     // SEND CUT COMMAND
-	if (settings.pageCutType == 3 || settings.pageCutType == 4){
+	if (settings.pageCutType == 2){
 		SendCommand(LineFeed);
 		SendCommand(CutCommand[settings.pageCutType]);
 	}
