@@ -11,7 +11,7 @@
 *cupsManualCopies:      True
 *cupsModelNumber:       100
 *cupsFilter:            "application/vnd.cups-raster 0 rastertoH400_H350"
-*ModelName:             "HP H400H350"
+*ModelName:             "H400 H350"
 *ShortNickName:         "H400_H350"
 *% CHANGE THE VERSION ONLY IN THE MAKEFILE
 *NickName:              "H400_H350 rel 1.17 (S.Code:01DV0000000300)"
