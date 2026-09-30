@@ -657,7 +657,7 @@ int main(int argc, char *argv[]) {
                     result = SendPrinterClearCmd();
                     
                     SendCommand(clearPage);
-                    while (cupsRasterReadHeader(rasterFileStruct, &cupsHeader));
+                    while (cupsRasterReadHeader2(rasterFileStruct, &cupsHeader));
 
                     cupsRasterClose(rasterFileStruct);
 
@@ -727,7 +727,7 @@ int main(int argc, char *argv[]) {
                 result = SendPrinterClearCmd();
                 
                 SendCommand(clearPage);
-                while (cupsRasterReadHeader(rasterFileStruct, &cupsHeader));
+                while (cupsRasterReadHeader2(rasterFileStruct, &cupsHeader));
 
                 cupsRasterClose(rasterFileStruct);
 
